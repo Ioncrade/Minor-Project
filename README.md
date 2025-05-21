@@ -1,4 +1,4 @@
-# Deepfake Detection with Vision Transformers and CNN Ensemble
+# Deepfake Detection with Vision Transformers and CNN Hybrid Architecture
 
 ## Overview
 
@@ -100,8 +100,8 @@ The explainability module employs **attention rollout** to trace and visualize h
 3. **Heatmap Generation**: The aggregated attention matrix is reshaped and upsampled to the original image dimensions, producing a heatmap overlay. We apply a colormap (e.g., Viridis) to distinguish high-attention (warm colors) from low-attention (cool colors).
 4. **Visualization**: Overlay heatmaps on sample images to interpret model focus:
 
-   * **Real Faces**: Attention centers on facial features like eyes, nose, and mouth, indicating reliance on fine-grained details for authenticity checks.
-   * **Fake Faces**: Attention often highlights boundary artifacts and blending regions, revealing the model’s sensitivity to synthesis imperfections.
+   * **Real**: Attention centers on cells features and its structures, indicating reliance on fine-grained details for authenticity checks.
+   * **Fake**: Attention often highlights boundary artifacts and blending regions, revealing the model’s sensitivity to synthesis imperfections.
 
 ### How to Generate Attention Rollouts
 
